@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stopwatch — HTML & CSS</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card" id="stopwatch-card">
+      <div class="header">
+        <div class="title">
+          <div class="logo">SW</div>
+          <div>
+            <h1>Stopwatch</h1>
+            <p class="sub">Clean, responsive, and ready for JavaScript</p>
+          </div>
+        </div>
+        <div style="text-align: right">
+          <div style="font-size: 12px; color: var(--muted)">00:00:00</div>
+        </div>
+      </div>
+
+      <div class="display">
+        <!-- JS should update the #time-display textContent -->
+        <div class="time" id="time-display">
+          00:00<span class="ms">.00</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn start" id="startBtn" onclick="watchStart()">
+          Start
+        </button>
+        <button class="btn stop" id="stopBtn" onclick="watchStop()">
+          Stop
+        </button>
+        <button class="btn lap" id="lapBtn">Lap</button>
+        <button class="btn ghost reset" id="resetBtn" onclick="watchReset()">
+          Reset
+        </button>
+      </div>
+
+      <div class="laps" id="laps">
+        <!-- Laps will be added by JS -->
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
