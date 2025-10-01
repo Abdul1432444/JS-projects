@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f0f2f5;
+  background: #132e58;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@ body {
 .input-box button {
   padding: 10px 15px;
   border: none;
-  background: #4caf50;
+  background: #fe8311;
   color: white;
   font-weight: bold;
   cursor: pointer;

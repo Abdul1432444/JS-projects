@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
-    <!-- Link to external CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="todo-container">
       <h2>To-Do List</h2>
       <div class="input-box">
-        <input type="text" placeholder="Add a new task..." />
-        <button>Add</button>
+        <input id="input-box" type="text" placeholder="Add a new task..." />
+        <button onclick="addTask()">Add</button>
       </div>
-      <ul>
-        <li>Learn JavaScript <span>×</span></li>
+      <ul id="list-container">
+        <!-- <li>Learn JavaScript <span>×</span></li>
         <li>Practice CSS <span>×</span></li>
-        <li>Build Projects <span>×</span></li>
+        <li>Build Projects <span>×</span></li> -->
       </ul>
     </div>
+    <script src="./practice.js"></script>
   </body>
 </html>
