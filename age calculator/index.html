@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Age Calculator</h1>
+        <p class="subtitle">Enter your date of birth to calculate your age.</p>
+      </header>
+
+      <section class="card">
+        <!-- Date Input -->
+        <label for="dob" class="label">Date of Birth</label>
+        <input id="dob" type="date" class="input" />
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button class="btn primary" type="button" onclick="calculateAge()">
+            Calculate
+          </button>
+          <button class="btn" type="button" onclick="resetAge()">Reset</button>
+        </div>
+
+        <!-- Error Message -->
+        <p id="error" class="error"></p>
+
+        <!-- Result Section -->
+        <div id="ageCard" class="result hidden">
+          <h3 class="result-title">Your Age</h3>
+          <div class="result-grid">
+            <div class="result-item">
+              <div class="result-value years">--</div>
+              <div class="result-label">Years</div>
+            </div>
+            <div class="result-item">
+              <div class="result-value months">--</div>
+              <div class="result-label">Months</div>
+            </div>
+            <div class="result-item">
+              <div class="result-value days">--</div>
+              <div class="result-label">Days</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small>Made with ❤️ — Age Calculator</small>
+      </footer>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
