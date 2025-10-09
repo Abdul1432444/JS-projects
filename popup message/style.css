@@ -22,6 +22,11 @@
   font-weight: 400;
   font-size: 15px;
 }
+#btn:hover {
+  transform: scale(0.95);
+  background-color: antiquewhite;
+  transition: transform 0.2s;
+}
 .popup {
   position: absolute;
   width: 300px;
@@ -58,4 +63,9 @@
   cursor: pointer;
   border: none;
   margin-top: 20px;
+}
+#submited:hover {
+  transform: scale(0.95);
+  background-color: rgb(100, 225, 68);
+  transition: transform 0.2s;
 }
