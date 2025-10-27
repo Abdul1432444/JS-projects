@@ -10,6 +10,7 @@ function calculateAge() {
 
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDay() - birthDate.getDay();
 
   if (
     monthDiff < 0 ||
@@ -17,8 +18,11 @@ function calculateAge() {
   ) {
     age--;
   }
+  if (dayDiff < 0 || (dayDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
 
   document.getElementById(
     "result"
-  ).textContent = `you are ${age} years and  months old`;
+  ).textContent = `you are ${age} years and  ${monthDiff}months and ${dayDiff} days old`;
 }
