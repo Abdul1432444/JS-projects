@@ -18,5 +18,5 @@ document.addEventListener("keydown", (e) => {
   if (allowedKeys.includes(key)) handleInput(key);
   else if (allowedKeys === "enter") handleInput("=");
   else if (allowedKeys === "backspace") handleInput("DEL");
-  else if (allowedKeys === "")
+  else if (allowedKeys === "Escape") handleInput("C");
 });
