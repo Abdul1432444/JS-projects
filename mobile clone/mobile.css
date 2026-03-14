@@ -1,0 +1,56 @@
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  background: black;
+  border-radius: 40px;
+  border: 8px solid #333;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.status-bar {
+  height: 30px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.screen {
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9")
+    center/cover;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.app {
+  text-align: center;
+  color: white;
+}
+
+.app img {
+  width: 50px;
+  height: 50px;
+}
+
+.app p {
+  margin-top: 5px;
+  font-size: 12px;
+}
